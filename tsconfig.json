@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		"rootDir": "src",
+		"outDir": "dst",
+		"module": "ESNext",
+		"target": "ESNext",
+		
+		"strictNullChecks": true,
+		"noImplicitThis": true,
+		"noImplicitReturns": true,
+		"noUncheckedIndexedAccess": true,
+		"alwaysStrict": true,
+
+		"preserveConstEnums": true,
+		"sourceMap": true,
+		"declaration": true,
+
+		"lib": ["ESNext","DOM"],
+
+		"skipDefaultLibCheck": true,
+	},
+}
