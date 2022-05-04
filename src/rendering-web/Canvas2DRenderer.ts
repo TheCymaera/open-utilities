@@ -119,7 +119,7 @@ export class Canvas2DRenderer {
 	}
 
 	#setPathStyle(pathStyle: PathStyle) {
-		this.ctx.lineWidth = pathStyle.width;
+		this.ctx.lineWidth = pathStyle.width * this.ctx.canvas.width / this.#viewportRect.width;
 		this.ctx.strokeStyle = pathStyle.color.toString();
 		this.ctx.miterLimit = pathStyle.miterLimit;
 
