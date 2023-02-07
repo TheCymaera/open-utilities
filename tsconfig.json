@@ -4,19 +4,23 @@
 		"outDir": "dst",
 		"module": "ESNext",
 		"target": "ESNext",
+
+		"moduleResolution": "node16",
 		
 		"strictNullChecks": true,
 		"noImplicitThis": true,
 		"noImplicitReturns": true,
 		"noUncheckedIndexedAccess": true,
+		"strictPropertyInitialization": true,
 		"alwaysStrict": true,
 
 		"preserveConstEnums": true,
 		"sourceMap": true,
 		"declaration": true,
 
-		"lib": ["ESNext","DOM"],
+		"lib": ["ESNext", "DOM"],
 
 		"skipDefaultLibCheck": true,
+		"skipLibCheck": true,
 	},
 }
