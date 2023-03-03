@@ -99,4 +99,8 @@ export class Vector2 {
 	}
 
 	static readonly zero = Object.freeze(new Vector2(0, 0));
+
+	static fromRotation(angle: number, length = 1) {
+		return new Vector2(Math.cos(angle) * length, Math.sin(angle) * length);
+	}
 }

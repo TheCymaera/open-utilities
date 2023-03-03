@@ -101,6 +101,14 @@ export class Rect {
 		return this.inflate(-amount);
 	}
 
+	lerp(other: Rect, fraction: number) {
+		this.x1 = this.x1 + (other.x1 - this.x1) * fraction;
+		this.y1 = this.y1 + (other.y1 - this.y1) * fraction;
+		this.x2 = this.x2 + (other.x2 - this.x2) * fraction;
+		this.y2 = this.y2 + (other.y2 - this.y2) * fraction;
+		return this;
+	}
+
 	toString() {
 		return `Rect(${this.x1.toFixed(3)}, ${this.y1.toFixed(3)}, ${this.width.toFixed(3)}, ${this.height.toFixed(3)})`;
 	}
