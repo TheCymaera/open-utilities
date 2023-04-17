@@ -43,6 +43,20 @@ export class Vector3 {
 		return this;
 	}
 
+	multiply(scale: number) {
+		this.x *= scale;
+		this.y *= scale;
+		this.z *= scale;
+		return this;
+	}
+
+	divide(scale: number) {
+		this.x /= scale;
+		this.y /= scale;
+		this.z /= scale;
+		return this;
+	}
+
 	rotateX(angle: number) {
 		const cos = Math.cos(angle);
 		const sin = Math.sin(angle);
@@ -70,6 +84,13 @@ export class Vector3 {
 		const y = this.y;
 		this.x = x * cos - y * sin;
 		this.y = x * sin + y * cos;
+		return this;
+	}
+
+	lerp(target: Vector3, fraction: number) {
+		this.x += (target.x - this.x) * fraction;
+		this.y += (target.y - this.y) * fraction;
+		this.z += (target.z - this.z) * fraction;
 		return this;
 	}
 
