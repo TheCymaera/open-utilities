@@ -1,3 +1,5 @@
-/.DS_Store
-/dst
-/package-lock.json
+.DS_Store
+dst
+package-lock.json
+pnpm-lock.yaml
+node_modules

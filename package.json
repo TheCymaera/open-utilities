@@ -7,8 +7,8 @@
 		"dst"
 	],
 	"exports": {
-    "./*": "./dst/*"
-  },
+		"./*": "./dst/*"
+	},
 	"scripts": {
 		"build": "tsc -p tsconfig.json",
 		"watch": "tsc -p tsconfig.json -w",
@@ -24,5 +24,8 @@
 	"bugs": {
 		"url": "https://github.com/TheCymaera/open-utilities/issues"
 	},
-	"homepage": "https://github.com/TheCymaera/open-utilities#readme"
+	"homepage": "https://github.com/TheCymaera/open-utilities#readme",
+	"devDependencies": {
+		"typescript": "^5.3.3"
+	}
 }

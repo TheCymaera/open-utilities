@@ -12,7 +12,7 @@ export abstract class Emitter<T> {
 		});
 	}
 
-	[Symbol.asyncIterator]() {
+	[Symbol.asyncIterator](): AsyncIterableIterator<T> {
 		return new _StreamIterator(this);
 	}
 }

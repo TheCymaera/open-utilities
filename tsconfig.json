@@ -2,10 +2,10 @@
 	"compilerOptions": {
 		"rootDir": "src",
 		"outDir": "dst",
-		"module": "ESNext",
+		"module": "NodeNext",
 		"target": "ESNext",
 
-		"moduleResolution": "node16",
+		"moduleResolution": "NodeNext",
 		
 		"strictNullChecks": true,
 		"noImplicitThis": true,
